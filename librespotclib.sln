@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "librespotclib", "librespotclib.vcxproj", "{AD3E5360-5001-4533-AD80-364DE6580E57}"
+EndProject
+Project("{BC8A1FFA-BEE3-4634-8014-F334798102B3}") = "harness", "harness\harness.vcxproj", "{B2C3D4E5-F6A7-4890-BCDE-234567890ABC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AD3E5360-5001-4533-AD80-364DE6580E57} = {AD3E5360-5001-4533-AD80-364DE6580E57}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD3E5360-5001-4533-AD80-364DE6580E57}.Release|x64.ActiveCfg = Release|x64
+		{AD3E5360-5001-4533-AD80-364DE6580E57}.Release|x64.Build.0 = Release|x64
+		{B2C3D4E5-F6A7-4890-BCDE-234567890ABC}.Release|x64.ActiveCfg = Release|x64
+		{B2C3D4E5-F6A7-4890-BCDE-234567890ABC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7993E26-B3A7-46B1-B6FD-A2D6A60807E5}
+	EndGlobalSection
+EndGlobal
