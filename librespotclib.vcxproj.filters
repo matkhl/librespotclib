@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Public API"><UniqueIdentifier>{243C8F13-D84E-40DB-827C-298BC547E236}</UniqueIdentifier></Filter>
+    <Filter Include="Core"><UniqueIdentifier>{151D36A4-207E-490F-95AA-A3503C7328B8}</UniqueIdentifier></Filter>
+    <Filter Include="Audio"><UniqueIdentifier>{85EA14F1-9D70-4493-AE65-E7F0172F4279}</UniqueIdentifier></Filter>
+    <Filter Include="Authentication"><UniqueIdentifier>{FD984657-0F99-4E76-A56F-175291189BA3}</UniqueIdentifier></Filter>
+    <Filter Include="Spotify Connect"><UniqueIdentifier>{6CF13514-FD62-46F9-B36B-8121AB87C144}</UniqueIdentifier></Filter>
+    <Filter Include="Connection"><UniqueIdentifier>{A82BFB9B-899B-409C-85E8-57D61E86CFC4}</UniqueIdentifier></Filter>
+    <Filter Include="Cryptography"><UniqueIdentifier>{05EC9523-2E5B-46B5-98ED-2FF052F54AA3}</UniqueIdentifier></Filter>
+    <Filter Include="Handshake"><UniqueIdentifier>{66E92103-1DF9-42C9-8EB1-63056FA90DD7}</UniqueIdentifier></Filter>
+    <Filter Include="Networking"><UniqueIdentifier>{8A0668F7-03C1-4916-A029-20617E1F425C}</UniqueIdentifier></Filter>
+    <Filter Include="Protocol"><UniqueIdentifier>{40BCBCE7-9341-401F-BEA7-0E48D09ED348}</UniqueIdentifier></Filter>
+    <Filter Include="Zeroconf"><UniqueIdentifier>{0F4903CD-980F-4AB7-93D1-0172029BAFF5}</UniqueIdentifier></Filter>
+    <Filter Include="Dependencies"><UniqueIdentifier>{0E24C833-80B2-4784-BBF8-980A883840C1}</UniqueIdentifier></Filter>
+    <Filter Include="Dependencies\nlohmann"><UniqueIdentifier>{22D80C2B-9600-4E75-8D31-0F7BF0A8685E}</UniqueIdentifier></Filter>
+    <Filter Include="Dependencies\stb"><UniqueIdentifier>{E7A9638A-C004-4EA0-AF8F-196589394A64}</UniqueIdentifier></Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dispatcher.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\session.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\spotify_id.cpp"><Filter>Core</Filter></ClCompile>
+    <ClCompile Include="src\audio\decrypt_audio.cpp"><Filter>Audio</Filter></ClCompile>
+    <ClCompile Include="src\audio\equalizer.cpp"><Filter>Audio</Filter></ClCompile>
+    <ClCompile Include="src\audio\ogg_demuxer.cpp"><Filter>Audio</Filter></ClCompile>
+    <ClCompile Include="src\audio\replaygain.cpp"><Filter>Audio</Filter></ClCompile>
+    <ClCompile Include="src\audio\storage_resolve.cpp"><Filter>Audio</Filter></ClCompile>
+    <ClCompile Include="src\audio\vorbis.cpp"><Filter>Audio</Filter></ClCompile>
+    <ClCompile Include="src\auth\blob.cpp"><Filter>Authentication</Filter></ClCompile>
+    <ClCompile Include="src\auth\client_token.cpp"><Filter>Authentication</Filter></ClCompile>
+    <ClCompile Include="src\auth\hashcash.cpp"><Filter>Authentication</Filter></ClCompile>
+    <ClCompile Include="src\auth\login5.cpp"><Filter>Authentication</Filter></ClCompile>
+    <ClCompile Include="src\connect\context_resolver.cpp"><Filter>Spotify Connect</Filter></ClCompile>
+    <ClCompile Include="src\connect\context_state.cpp"><Filter>Spotify Connect</Filter></ClCompile>
+    <ClCompile Include="src\connect\put_state.cpp"><Filter>Spotify Connect</Filter></ClCompile>
+    <ClCompile Include="src\connect\spirc_device.cpp"><Filter>Spotify Connect</Filter></ClCompile>
+    <ClCompile Include="src\connect\websocket.cpp"><Filter>Spotify Connect</Filter></ClCompile>
+    <ClCompile Include="src\connection\ap_codec.cpp"><Filter>Connection</Filter></ClCompile>
+    <ClCompile Include="src\crypto\base64.cpp"><Filter>Cryptography</Filter></ClCompile>
+    <ClCompile Include="src\crypto\bcrypt_wrap.cpp"><Filter>Cryptography</Filter></ClCompile>
+    <ClCompile Include="src\crypto\bigint.cpp"><Filter>Cryptography</Filter></ClCompile>
+    <ClCompile Include="src\crypto\shannon.cpp"><Filter>Cryptography</Filter></ClCompile>
+    <ClCompile Include="src\handshake\handshake.cpp"><Filter>Handshake</Filter></ClCompile>
+    <ClCompile Include="src\net\apresolve.cpp"><Filter>Networking</Filter></ClCompile>
+    <ClCompile Include="src\net\http_fetch.cpp"><Filter>Networking</Filter></ClCompile>
+    <ClCompile Include="src\net\tcp_socket.cpp"><Filter>Networking</Filter></ClCompile>
+    <ClCompile Include="src\proto\authentication.cpp"><Filter>Protocol</Filter></ClCompile>
+    <ClCompile Include="src\proto\keyexchange.cpp"><Filter>Protocol</Filter></ClCompile>
+    <ClCompile Include="src\proto\track.cpp"><Filter>Protocol</Filter></ClCompile>
+    <ClCompile Include="src\zeroconf\http_server.cpp"><Filter>Zeroconf</Filter></ClCompile>
+    <ClCompile Include="src\zeroconf\mdns.cpp"><Filter>Zeroconf</Filter></ClCompile>
+    <ClCompile Include="src\zeroconf\zeroconf.cpp"><Filter>Zeroconf</Filter></ClCompile>
+    <ClCompile Include="deps\stb\stb_vorbis.c"><Filter>Dependencies\stb</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\librespotc\librespotc.h"><Filter>Public API</Filter></ClInclude>
+    <ClInclude Include="src\dispatcher.h"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\spotify_id.h"><Filter>Core</Filter></ClInclude>
+    <ClInclude Include="src\audio\decrypt_audio.h"><Filter>Audio</Filter></ClInclude>
+    <ClInclude Include="src\audio\equalizer.h"><Filter>Audio</Filter></ClInclude>
+    <ClInclude Include="src\audio\ogg_demuxer.h"><Filter>Audio</Filter></ClInclude>
+    <ClInclude Include="src\audio\replaygain.h"><Filter>Audio</Filter></ClInclude>
+    <ClInclude Include="src\audio\storage_resolve.h"><Filter>Audio</Filter></ClInclude>
+    <ClInclude Include="src\audio\vorbis.h"><Filter>Audio</Filter></ClInclude>
+    <ClInclude Include="src\auth\blob.h"><Filter>Authentication</Filter></ClInclude>
+    <ClInclude Include="src\auth\client_token.h"><Filter>Authentication</Filter></ClInclude>
+    <ClInclude Include="src\auth\hashcash.h"><Filter>Authentication</Filter></ClInclude>
+    <ClInclude Include="src\auth\login5.h"><Filter>Authentication</Filter></ClInclude>
+    <ClInclude Include="src\connect\context_resolver.h"><Filter>Spotify Connect</Filter></ClInclude>
+    <ClInclude Include="src\connect\context_state.h"><Filter>Spotify Connect</Filter></ClInclude>
+    <ClInclude Include="src\connect\put_state.h"><Filter>Spotify Connect</Filter></ClInclude>
+    <ClInclude Include="src\connect\spirc_device.h"><Filter>Spotify Connect</Filter></ClInclude>
+    <ClInclude Include="src\connect\websocket.h"><Filter>Spotify Connect</Filter></ClInclude>
+    <ClInclude Include="src\connection\ap_codec.h"><Filter>Connection</Filter></ClInclude>
+    <ClInclude Include="src\crypto\base64.h"><Filter>Cryptography</Filter></ClInclude>
+    <ClInclude Include="src\crypto\bcrypt_wrap.h"><Filter>Cryptography</Filter></ClInclude>
+    <ClInclude Include="src\crypto\bigint.h"><Filter>Cryptography</Filter></ClInclude>
+    <ClInclude Include="src\crypto\shannon.h"><Filter>Cryptography</Filter></ClInclude>
+    <ClInclude Include="src\handshake\handshake.h"><Filter>Handshake</Filter></ClInclude>
+    <ClInclude Include="src\net\apresolve.h"><Filter>Networking</Filter></ClInclude>
+    <ClInclude Include="src\net\http_fetch.h"><Filter>Networking</Filter></ClInclude>
+    <ClInclude Include="src\net\tcp_socket.h"><Filter>Networking</Filter></ClInclude>
+    <ClInclude Include="src\proto\authentication.h"><Filter>Protocol</Filter></ClInclude>
+    <ClInclude Include="src\proto\keyexchange.h"><Filter>Protocol</Filter></ClInclude>
+    <ClInclude Include="src\proto\pb_codec.h"><Filter>Protocol</Filter></ClInclude>
+    <ClInclude Include="src\proto\track.h"><Filter>Protocol</Filter></ClInclude>
+    <ClInclude Include="src\zeroconf\http_server.h"><Filter>Zeroconf</Filter></ClInclude>
+    <ClInclude Include="src\zeroconf\mdns.h"><Filter>Zeroconf</Filter></ClInclude>
+    <ClInclude Include="src\zeroconf\zeroconf.h"><Filter>Zeroconf</Filter></ClInclude>
+    <ClInclude Include="deps\nlohmann\json.hpp"><Filter>Dependencies\nlohmann</Filter></ClInclude>
+  </ItemGroup>
+</Project>
